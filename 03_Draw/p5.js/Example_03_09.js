@@ -1,10 +1,11 @@
 function setup() {
   createCanvas(480, 120);
+  angleMode(DEGREES);
 }
 
 function draw() {
-  ellipse(140, 0, 190, 190);
-  // The rectangle draws on top of the ellipse
-  // because it comes after in the code
-  rect(160, 30, 260, 20);
+  arc(90, 60, 80, 80, 0, 90);
+  arc(190, 60, 80, 80, 0, 270);
+  arc(290, 60, 80, 80, 180, 450);
+  arc(390, 60, 80, 80, 45, 225);
 }
