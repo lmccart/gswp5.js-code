@@ -1,13 +1,14 @@
-PImage img;
+var img;
 
-void setup() {
-  size(480, 120);
+function preload() {
   img = loadImage("clouds.gif");
 }
 
-void draw() {
+function setup() {
+  createCanvas(480, 120);
+}
+function draw() {
   background(255);
   image(img, 0, 0);
   image(img, 0, mouseY * -1);
 }
-

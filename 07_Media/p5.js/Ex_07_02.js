@@ -1,15 +1,17 @@
-PImage img1;
-PImage img2;
+var img1;
+var img2;
 
-void setup() {
-  size(480, 120);
+function preload() {
   img1 = loadImage("lunar.jpg");
   img2 = loadImage("capsule.jpg");
 }
 
-void draw() {
+function setup() {
+  createCanvas(480, 120);
+}
+
+function draw() {
   image(img1, -120, 0);
   image(img1, 130, 0, 240, 120);
   image(img2, 300, 0, 240, 120);
 }
-
