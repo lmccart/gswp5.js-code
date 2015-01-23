@@ -1,7 +1,8 @@
 function setup() {
   createCanvas(480, 120);
-  textFont("Source Code Pro");
+  textFont("Arial");
   noStroke();
+  fill(0);
 }
 
 function draw() {
