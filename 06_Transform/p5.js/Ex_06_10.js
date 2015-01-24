@@ -3,10 +3,10 @@ function setup() {
 }
 
 function draw() {
-  pushMatrix();
+  push();
   translate(mouseX, mouseY);
   rect(0, 0, 30, 30);
-  popMatrix();
+  pop();
   translate(35, 10);
   rect(0, 0, 15, 15);
 }

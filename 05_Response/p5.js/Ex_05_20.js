@@ -1,10 +1,11 @@
 function setup() {
-  createCanvas(480, 120);
-  fill(0, 102);
-  smooth();
-  noStroke();
+  createCanvas(240, 120);
 }
 
 function draw() {
-  ellipse(touchX, touchY, 15, 15);
+  background(204);
+  line(20, 20, 220, 100);
+  if (touchIsStarted) {
+    line(220, 20, 20, 100);
+  }
 }

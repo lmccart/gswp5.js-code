@@ -5,8 +5,8 @@ function setup() {
 }
 
 function draw() {
-  rotate(angle);
   translate(mouseX, mouseY);
+  rotate(angle);
   rect(-15, -15, 30, 30);
   angle += 0.1;
 }
