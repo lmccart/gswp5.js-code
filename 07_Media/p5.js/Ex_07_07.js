@@ -2,7 +2,7 @@ var img;
 
 function setup() {
   createCanvas(480, 120);
-  img = loadImage("lunar.jpg");
+  img = loadImage('lunar.jpg');
   noLoop();
 }
 

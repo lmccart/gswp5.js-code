@@ -1,7 +1,7 @@
 var img;
 
 function preload() {
-  img = loadImage("clouds.gif");
+  img = loadImage('clouds.gif');
 }
 
 function setup() {

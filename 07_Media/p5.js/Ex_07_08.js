@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(480, 120);
-  loadImage("lunar.jpg", drawImage);
+  loadImage('lunar.jpg', drawImage);
   noLoop();
 }
 
