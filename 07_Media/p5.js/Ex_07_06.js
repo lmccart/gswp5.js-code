@@ -1,7 +1,7 @@
 var img;
 
 function preload() {
-  img = loadImage('network.svg');
+  img = loadImage("network.svg");
 }
 
 function setup() {
@@ -9,7 +9,7 @@ function setup() {
 }
 
 function draw() {
-  background(204);
+  background(0);
   image(img, 0, 0);
-  image(img, 0, mouseY * -1);
+  image(img, mouseX, 0);
 }

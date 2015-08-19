@@ -7,5 +7,9 @@ function setup() {
 
 function draw() {
   background(102);
-  text('That's one small step for man...', 26, 24, 300, 100);
+  text('The Eagle has landed.', 26, 24, 300, 100);
+}
+
+function mousePressed() {
+  save();
 }

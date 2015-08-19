@@ -1,10 +1,18 @@
+var img1;
+var img2;
+
 var bot1;
 var bot2;
 
+function preload() {
+  img1 = loadImage("robot1.svg");
+  img2 = loadImage("robot2.svg");
+}
+
 function setup() {
   createCanvas(720, 480);
-  bot1 = new Robot("robot1.svg", 90, 80);
-  bot2 = new Robot("robot2.svg", 440, 30);
+  bot1 = new Robot(img1, 90, 80);
+  bot2 = new Robot(img2, 440, 30);
 }
 
 function draw() {
@@ -19,12 +27,12 @@ function draw() {
   bot2.display();
 }
 
-function Robot(imgPath, tempX, tempY) {  
+function Robot(img, tempX, tempY) {  
   // Set initial values for properties
   this.xpos = tempX;
   this.ypos = tempY;
   this.angle = random(0, TWO_PI);
-  this.botImage = loadImage(imgPath);
+  this.botImage = img;
   this.yoffset = 0.0;
 
   // Update the properties
