@@ -1,4 +1,0 @@
-void draw() {
-  println(frameRate);
-}
-
