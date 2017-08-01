@@ -10,4 +10,5 @@ function draw() {
   ellipse(279, 60, 90, 90);
   strokeWeight(20);  // Stroke weight to 20 pixels
   ellipse(389, 60, 90, 90);
+  strokeWeight(1); // Reset stroke to default value preceding next loop
 }
