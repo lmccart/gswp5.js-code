@@ -35,4 +35,5 @@ function draw() {
   endShape();
   fill(0);
   ellipse(345, 50, 10, 10);
+  fill(255); // Reset fill to default preceding next loop
 }
